@@ -143,7 +143,26 @@
     }
 
     .error h1 {
-      color: #FF8A8A;
+      color: #7CFFB2;
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 14px;
+      line-height: 1.3;
+    }
+
+    .hint-link {
+      display: inline-block;
+      margin-top: 8px;
+      color: #7CFFB2;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    .hint-link:hover {
+      text-shadow: 0 0 8px rgba(124, 255, 178, 0.5);
     }
 
     .fade-in {
@@ -191,11 +210,9 @@
 
   <!-- Error -->
   <div class="card error hidden" id="errorCard">
-    <div class="result-icon">❌</div>
-    <h1>Pogresan kod</h1>
-    <p class="subtitle">Probaj ponovo ili pogledaj trag.</p>
-    <button type="button" onclick="resetForm()">Probaj ponovo</button>
-    <a href="https://anatomijauspeha2026.vercel.app/registracija" class="secondary-btn" id="hintLink">Otvori trag</a>
+    <h1>žao nam je, lozinka je netačna.</h1>
+    <p class="subtitle">Prijavi se za Anatomiju Uspeha kako bi imao šansu da osvojiš još bolje nagrade.</p>
+    <a href="https://anatomijauspeha2026.vercel.app/registracija" class="hint-link">PRIJAVI SE OVDE</a>
   </div>
 
   <script>
